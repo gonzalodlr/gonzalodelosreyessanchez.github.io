@@ -286,6 +286,56 @@ html {
   }
 }
 
+.skills .skill .python {
+  width: 0%;
+  animation: 2s python forwards;
+}
+@keyframes python {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+.skills .skill .sql {
+  width: 0%;
+  animation: 2s sql forwards;
+}
+
+.skills .skill .c- {
+  width: 0%;
+  animation: 2s c- forwards;
+}
+@keyframes c- {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+.skills .skill .c {
+  width: 0%;
+  animation: 2s c forwards;
+}
+@keyframes c {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+@keyframes sql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
 .skills .skill .htmlcss {
   width: 0%;
   animation: 2s htmlcss forwards;
@@ -295,54 +345,14 @@ html {
     width: 0%;
   }
   100% {
-    width: 89%;
+    width: 50%;
   }
 }
-
-.skills .skill .photoshop {
+.skills .skill .efectividad {
   width: 0%;
-  animation: 2s photoshop forwards;
+  animation: 2s efectividad forwards;
 }
-@keyframes photoshop {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 95%;
-  }
-}
-
-.skills .skill .wordpress {
-  width: 0%;
-  animation: 2s wordpress forwards;
-}
-@keyframes wordpress {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 81%;
-  }
-}
-
-.skills .skill .drupal {
-  width: 0%;
-  animation: 2s drupal forwards;
-}
-@keyframes drupal {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 55%;
-  }
-}
-
-.skills .skill .comunicacion {
-  width: 0%;
-  animation: 2s comunicacion forwards;
-}
-@keyframes comunicacion {
+@keyframes efectividad {
   0% {
     width: 0%;
   }
@@ -360,7 +370,7 @@ html {
     width: 0%;
   }
   100% {
-    width: 70%;
+    width: 94%;
   }
 }
 
@@ -373,7 +383,7 @@ html {
     width: 0%;
   }
   100% {
-    width: 99%;
+    width: 60%;
   }
 }
 
@@ -386,22 +396,22 @@ html {
     width: 0%;
   }
   100% {
-    width: 65%;
+    width: 90%;
   }
 }
-
-.skills .skill .proyect {
+.skills .skill .adaptacion {
   width: 0%;
-  animation: 2s proyect forwards;
+  animation: 2s adaptacion forwards;
 }
-@keyframes proyect {
+@keyframes adaptacion {
   0% {
     width: 0%;
   }
   100% {
-    width: 94%;
+    width: 85%;
   }
 }
+
 /* SECCION CURRICULUM */
 .curriculum {
   background-color: #1e2326;
@@ -565,6 +575,20 @@ html {
   margin-bottom: 0px;
 }
 /* SECCION CONTACTO */
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 100%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
 .contacto {
   background-image: url(img/contact_bg.png);
   background-color: #1e2326;
@@ -624,9 +648,6 @@ html {
   transition: 1s;
 }
 .contacto button:hover .overlay {
-  width: 100%;
-}
-.contacto .col img {
   width: 100%;
 }
 .contacto .col .info {
