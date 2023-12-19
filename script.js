@@ -34,7 +34,8 @@ function efectoHabilidades() {
     habilidades[7].classList.add("trabajo");
     habilidades[8].classList.add("creatividad");
     habilidades[9].classList.add("dedicacion");
-    habilidades[10].classList.add("adaptación");
+    habilidades[10].classList.add("adaptacion");
+    habilidades[11].classList.add("resolutivo");
   }
 }
 
@@ -42,3 +43,21 @@ function efectoHabilidades() {
 window.onscroll = function () {
   efectoHabilidades();
 };
+
+function enviarCorreo() {
+  var formData = $("#miFormulario").serialize();
+
+  $.ajax({
+    type: "POST",
+    url: "enviar_correo.php", // Reemplaza con la URL de tu script del lado del servidor
+    data: formData,
+    success: function(response) {
+      // Maneja la respuesta del servidor (puede ser una página de confirmación, etc.)
+      console.log(response);
+    },
+    error: function(error) {
+      // Maneja errores de la solicitud AJAX
+      console.log(error);
+    }
+  });
+}

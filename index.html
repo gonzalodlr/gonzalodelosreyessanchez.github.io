@@ -16,6 +16,7 @@
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="estilo.css">
     <link rel="icon" href="img/logo.jpg">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 
 <body>
@@ -74,7 +75,7 @@
                     <h3>Datos Personales</h3>
                     <ul>
                         <li>
-                            <strong>Cumpleaños</strong>
+                            <strong>Nacimiento</strong>
                             6 de Julio de 2002
                         </li>
                         <li>
@@ -89,7 +90,8 @@
                             <strong>Dirección</strong>
                             Ciudad Real, España
                         </li>
-                        <p><br>Soy curioso, me gusta experimentar aprender, autodidacta</p>
+                        <p><br>Me considero investigador y resolutivo, no me gusta dejar <br> las cosas a medias. Si
+                            realizo algo, lo realizo bien.</p>
                     </ul>
                 </div>
 
@@ -231,6 +233,14 @@
                     </div>
                     <div class="skill">
                         <span>Adaptación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resolución de proyectos</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>85%</span>
@@ -388,15 +398,31 @@
             <div class="fila">
                 <!-- Formulario -->
                 <div class="col">
+                    <!--
+                    <form action="https://formsubmit.co/jirisah555@astegol.com" method="POST" />
                     <input type="text" placeholder="Tú Nombre">
                     <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
+                    <input type="email" name="email" placeholder="Dirección de correo">
                     <input type="text" placeholder="Tema">
                     <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
+                    <button type="button"> Enviar Mensaje <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                    -->
+                    <form id="form" action="https://formsubmit.co/3bgonzalodelosreyes@gmail.com" method="POST"
+                        class="form">
+                        <input name="nombre" id="nombre" type="name" placeholder="Nombre" required>
+                        <input name="correo" id="correo" type="email" placeholder="Dirección de correo electrónico"
+                            required>
+                        <input name="telefono" id="telefono" type="" placeholder="Número de teléfono" required>
+                        <textarea name="mensaje" id="" cols="35" rows="10" placeholder="Mensaje" required></textarea>
+                        <button type="submit" class="submit" required> Enviar Mensaje <i
+                                class="fa-solid fa-paper-plane"></i>
+                        </button>
+                        <input type="hidden" name="_captcha" value="true"></input>
+                        <input type="hidden" name="_next"
+                            value="https://gonzalodlr.github.io/gonzalodelosreyessanchez.github.io">
+                        <input type="hidden" name="_autoresponse" value="Mensaje enviado correctamente.">
+                    </form>
                 </div>
                 <!-- Mapa -->
                 <div class="col">
@@ -432,6 +458,7 @@
             <a href="https://www.instagram.com/gonzalo.dlr"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.linkedin.com/in/gonzalodlr/"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
+        <p>@copyright Gonzalo De Los Reyes Sánchez</p>
     </footer>
 
     <script src="script.js"></script>

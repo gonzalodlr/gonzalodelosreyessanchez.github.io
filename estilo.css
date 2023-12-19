@@ -412,6 +412,19 @@ html {
   }
 }
 
+.skills .skill .resolutivo {
+  width: 0%;
+  animation: 2s resolutivo forwards;
+}
+@keyframes resolutivo {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
 /* SECCION CURRICULUM */
 .curriculum {
   background-color: #1e2326;
