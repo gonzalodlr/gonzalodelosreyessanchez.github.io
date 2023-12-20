@@ -1,5 +1,18 @@
 /** @format */
 
+// JavaScript para mostrar la pregunta de confirmación
+document.getElementById("alerta").onclick = function () {
+  // Utilizamos la función confirm() para mostrar la pregunta
+  var confirmacion = confirm("¿Estás seguro de enviar un correo?");
+
+  // Verificamos la respuesta del usuario
+  if (confirmacion) {
+    alert("Correo enviado."); // Mensaje si el usuario hace clic en "Aceptar"
+  } else {
+    alert("Envío de correo cancelado."); // Mensaje si el usuario hace clic en "Cancelar"
+  }
+};
+
 let menuVisible = false;
 //Función que oculta o muestra el menu
 function mostrarOcultarMenu() {
@@ -43,21 +56,3 @@ function efectoHabilidades() {
 window.onscroll = function () {
   efectoHabilidades();
 };
-
-function enviarCorreo() {
-  var formData = $("#miFormulario").serialize();
-
-  $.ajax({
-    type: "POST",
-    url: "enviar_correo.php", // Reemplaza con la URL de tu script del lado del servidor
-    data: formData,
-    success: function(response) {
-      // Maneja la respuesta del servidor (puede ser una página de confirmación, etc.)
-      console.log(response);
-    },
-    error: function(error) {
-      // Maneja errores de la solicitud AJAX
-      console.log(error);
-    }
-  });
-}
